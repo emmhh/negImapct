@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,13 @@ public class GameManager : MonoBehaviour
 {
     // Singleton pattern
     public static GameManager Instance;
+
+    internal void CharacterDied()
+    {
+        // TODO get restart page
+        
+        throw new NotImplementedException();
+    }
 
     private void Awake()
     {
