@@ -1,31 +1,25 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     // Singleton pattern
     public static GameManager Instance;
+    GameOverCanvasControl gameOverCanvasControl;
+// CardDeck cardDeck;
 
-    internal void CharacterDied()
-    {
-        // TODO get restart page
-        
-        throw new NotImplementedException();
-    }
 
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
+        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
@@ -38,5 +32,13 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+    public void GameOver() {//TODO intro game over screen
+        GameOverCanvasControl gocc = GetComponent<GameOverCanvasControl>();
+        gocc.Display();
+    }
+
+    public void DisplayCardSelection() {
+   //     cardDeck = GetComponent<CardDeck>();
     }
 }
