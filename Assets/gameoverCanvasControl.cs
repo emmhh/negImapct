@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gameoverCanvasControl : MonoBehaviour
+public class GameOverCanvasControl : MonoBehaviour
 {
     CanvasGroup cg;
     private void Start()
     {
         cg = GetComponent<CanvasGroup>();
+        cg.alpha = 0;
     }
-    void gameOver(bool yes)
+   public  void Display()
     {
-        cg.alpha = yes ? 1 : 0;
+        cg.alpha = 1;
     }
 }

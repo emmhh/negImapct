@@ -47,7 +47,7 @@ namespace TMPro.Examples
         IEnumerator Start()
         {
 
-            // Force and update of the mesh to get valid information.
+            // Force and update of the mesh to GetAge valid information.
             m_textMeshPro.ForceMeshUpdate();
 
 
@@ -59,7 +59,7 @@ namespace TMPro.Examples
             {
                 visibleCount = counter % (totalVisibleCharacters + 1);
 
-                m_textMeshPro.maxVisibleCharacters = visibleCount; // How many characters should TextMeshPro display?
+                m_textMeshPro.maxVisibleCharacters = visibleCount; // How many characters should TextMeshPro Display?
 
                 // Once the last character has been revealed, wait 1.0 second and start over.
                 if (visibleCount >= totalVisibleCharacters)
