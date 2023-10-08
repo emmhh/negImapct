@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     // Singleton pattern
     public static GameManager Instance;
     GameOverCanvasControl gameOverCanvasControl;
-    CardDeck cardDeck;
+// CardDeck cardDeck;
 
 
     private void Awake()
@@ -39,6 +39,6 @@ public class GameManager : MonoBehaviour
     }
 
     public void DisplayCardSelection() {
-        cardDeck = GetComponent<CardDeck>();
+   //     cardDeck = GetComponent<CardDeck>();
     }
 }

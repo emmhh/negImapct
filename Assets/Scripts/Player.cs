@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
     public float runSpeed = 5f;
-   // public float health = 100f;
+    // public float health = 100f;
     private int age = 20;
 
     public float speedBoost = 0.5f;
