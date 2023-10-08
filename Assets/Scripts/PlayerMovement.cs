@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
-    public float baseSpeed = 1f;
+    public float baseSpeed = 3f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
     public float runSpeed = 5f;
