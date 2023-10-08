@@ -625,6 +625,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8189980434977739222, guid: 2dfbb63c9cdf7504faf4ff26b0581598, type: 3}
       insertIndex: -1
       addedObject: {fileID: 444177719}
+    - targetCorrespondingSourceObject: {fileID: 8189980434977739222, guid: 2dfbb63c9cdf7504faf4ff26b0581598, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 444177721}
   m_SourcePrefab: {fileID: 100100000, guid: 2dfbb63c9cdf7504faf4ff26b0581598, type: 3}
 --- !u!1 &444177715 stripped
 GameObject:
@@ -680,6 +683,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &444177721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444177715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3605c55cd5809744cbe699c0f0c3498f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &452293155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,7 +923,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524386915}
-  m_LocalRotation: {x: 0.6314845, y: -0.000000011660998, z: 0.0000000011927607, w: 0.7753885}
+  m_LocalRotation: {x: 0.63148457, y: 0.000000031858452, z: -0.000000003258687, w: 0.7753884}
   m_LocalPosition: {x: 13.533041, y: 22.914845, z: -9.881616}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3381,7 +3396,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763390475}
-  m_LocalRotation: {x: 0.6314845, y: -0.000000011660998, z: 0.0000000011927607, w: 0.7753885}
+  m_LocalRotation: {x: 0.63148457, y: 0.000000031858452, z: -0.000000003258687, w: 0.7753884}
   m_LocalPosition: {x: 13.533041, y: 22.914845, z: -9.881616}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3405,7 +3420,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 0
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
