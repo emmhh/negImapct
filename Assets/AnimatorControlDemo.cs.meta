@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/PlayerMovement.cs.meta
+guid: af690d50a67ae4f4796e5ddb8a75e86c
+========
+guid: 286cd6b41d8684d899ceb23ca58a9e0a
+>>>>>>>> cards:Assets/AnimatorControlDemo.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

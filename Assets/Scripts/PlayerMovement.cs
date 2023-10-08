@@ -6,12 +6,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
-    public float baseSpeed = 1f;
+    public float baseSpeed = 3f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
     public float runSpeed = 5f;
-    public float health = 100f;
-    public int age = 80;
+    //public float health = 100f;
+    //public int age = 80;
 
     public float speedBoost = 0.5f;
     Vector3 velocity;
@@ -34,7 +34,11 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
 
-        controller.Move(move * (baseSpeed + speedBoost) * Time.deltaTime);
+        // Calculate the direction the character is moving in
+        Vector3 moveDirection = move.normalized;
+
+        // Move the character
+        controller.Move(moveDirection * (baseSpeed + speedBoost) * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded)
         {
@@ -44,6 +48,13 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        // Make the character face the direction of movement
+        if (moveDirection != Vector3.zero)
+        {
+            Quaternion newRotation = Quaternion.LookRotation(moveDirection);
+            transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 1f);
+        }
     }
 
     void PrintInstruction()
