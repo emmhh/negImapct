@@ -11,14 +11,19 @@ public class Player : MonoBehaviour
     public float jumpHeight = 3f;
     public float runSpeed = 5f;
     // public float health = 100f;
-    private int age = 20;
+    private int age = 0;
+    public float distance = 0;
+    //age_bar manages the dynamic stats of age in game.
+    public age_bar ageBar;
 
     public float speedBoost = 0.5f;
     Vector3 velocity;
+
     // Start is called before the first frame update
     void Start()
     {
         PrintInstruction();
+        ageBar.set(this.age);
     }
     void PrintInstruction()
     {
@@ -59,7 +64,21 @@ public class Player : MonoBehaviour
         {
             Quaternion newRotation = Quaternion.LookRotation(moveDirection);
             transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 1f);
+            this.age = ageBar.GetAge();
+            this.age += 10;
+            ageBar.set(this.age);
+            
         }
+
+        //distance += baseSpeed * Time.deltaTime;
+        //Debug.Log(distance.ToString());
+        ////add_age_bar
+        //if (distance % 50 == 0)
+        //{
+        //    this.age = ageBar.GetAge();
+        //    ageBar.set(this.age + 10);
+        //}
+
     }
 
     public void SetAge(int newAge)

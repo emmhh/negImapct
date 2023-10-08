@@ -12,11 +12,9 @@ public class GameManager : MonoBehaviour
     //public string selectorSceneName = "SelectorScene"; // Assuming your card selector scene is named "SelectorScene"
     //private const int ageDecreaseValue = 10; // Value to check against for scene load
 
-
-
     // CardDeck cardDeck;
     private Card selectedCard;
-
+    private int timer = 0;
     public void SetSelectedCard(Card card)
     {
         this.selectedCard = card;

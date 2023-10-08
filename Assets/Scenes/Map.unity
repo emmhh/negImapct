@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3146,7 +3146,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 446989208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38aaae3abc7504305a17021922f527bc, type: 3}
+  m_Script: {fileID: 11500000, guid: f6724d6bfcdc2d0439becb6616ae7150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &446989212
@@ -5893,19 +5893,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3247956704751669664, guid: 538fb53befd88465a80a5180c0d57dde, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7753884
+      value: 0.7753885
       objectReference: {fileID: 0}
     - target: {fileID: 3247956704751669664, guid: 538fb53befd88465a80a5180c0d57dde, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.63148457
+      value: 0.6314845
       objectReference: {fileID: 0}
     - target: {fileID: 3247956704751669664, guid: 538fb53befd88465a80a5180c0d57dde, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000031858452
+      value: -0.000000011660998
       objectReference: {fileID: 0}
     - target: {fileID: 3247956704751669664, guid: 538fb53befd88465a80a5180c0d57dde, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000003258687
+      value: 0.0000000011927607
       objectReference: {fileID: 0}
     - target: {fileID: 3247956704908673198, guid: 538fb53befd88465a80a5180c0d57dde, type: 3}
       propertyPath: m_UpdateMethod
@@ -5981,19 +5981,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3247956705810888389, guid: 538fb53befd88465a80a5180c0d57dde, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7753884
+      value: 0.7753885
       objectReference: {fileID: 0}
     - target: {fileID: 3247956705810888389, guid: 538fb53befd88465a80a5180c0d57dde, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.63148457
+      value: 0.6314845
       objectReference: {fileID: 0}
     - target: {fileID: 3247956705810888389, guid: 538fb53befd88465a80a5180c0d57dde, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000031858452
+      value: -0.000000011660998
       objectReference: {fileID: 0}
     - target: {fileID: 3247956705810888389, guid: 538fb53befd88465a80a5180c0d57dde, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000003258687
+      value: 0.0000000011927607
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11278,6 +11278,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1066828454825130634, guid: 4c219c8c7f82f436f8050f8ea4a886b3, type: 3}
+      propertyPath: ageBar
+      value: 
+      objectReference: {fileID: 446989211}
     - target: {fileID: 8371441494148411872, guid: 4c219c8c7f82f436f8050f8ea4a886b3, type: 3}
       propertyPath: m_RootOrder
       value: 2

@@ -12,8 +12,8 @@ public class age_bar : MonoBehaviour
     }
     public void set(int age)
     {
-        if (age < minAge) age = minAge;
-        if(age > maxAge)age =maxAge;
+        if (age < minAge) { age = minAge; }
+        if (age > maxAge) { age = maxAge; }
         slider.value = age;
     }
     public int GetAge()
