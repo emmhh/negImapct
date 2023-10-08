@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Threading;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -11,7 +12,8 @@ public class Player : MonoBehaviour
     public float jumpHeight = 3f;
     public float runSpeed = 5f;
     // public float health = 100f;
-    private float age = 0;
+    private float currAge = 0;
+  
     public float distance = 0;
     //age_bar manages the dynamic stats of age in game.
     public age_bar ageBar;
@@ -23,7 +25,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         PrintInstruction();
-        ageBar.set((int)this.age);
     }
     void PrintInstruction()
     {
@@ -64,9 +65,7 @@ public class Player : MonoBehaviour
         {
             Quaternion newRotation = Quaternion.LookRotation(moveDirection);
             transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 1f);
-            this.age = ageBar.GetAge();
-            this.age += .1f;
-            ageBar.set((int)this.age);
+
             
         }
 
@@ -78,14 +77,9 @@ public class Player : MonoBehaviour
         //    this.age = ageBar.GetAge();
         //    ageBar.set(this.age + 10);
         //}
-
+        currAge += 0.1f;
+        ageBar.set((int)currAge);
     }
 
-    public void SetAge(int newAge)
-    {
-        this.age = newAge; 
-        if(age> 80) {
-            GameManager.Instance.GameOver();
-        }
-    }
+
 }
