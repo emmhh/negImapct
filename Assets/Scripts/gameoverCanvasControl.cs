@@ -10,7 +10,7 @@ public class GameOverCanvasControl : MonoBehaviour
         cg = GetComponent<CanvasGroup>();
         cg.alpha = 0;
     }
-   public  void Display()
+   public void Display()
     {
         cg.alpha = 1;
     }
