@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CreatColliderForFBX : MonoBehaviour
@@ -18,9 +16,4 @@ public class CreatColliderForFBX : MonoBehaviour
         boxCollider.center = new Vector3(0f, 0f, 0f); // Set the center of the Box Collider
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
